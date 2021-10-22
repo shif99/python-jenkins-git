@@ -1,0 +1,21 @@
+
+[
+  {
+    "productId": 1,
+      "productName": "Iphone13",
+      "price": 75542.5,
+      "rating": 4.8
+  },
+  {
+    "productId": 2,
+      "productName": "SamsungFlip",
+      "price": 149999.5,
+      "rating": 4.6
+  },
+  {
+    "productId": 3,
+      "productName": "Oneplus",
+      "price": 69999.5,
+      "rating": 4.2
+  }
+]
