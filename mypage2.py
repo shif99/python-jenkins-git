@@ -40,8 +40,6 @@ def add_new_product():
     else:
         return render_template("add_product.html")
 
-#if __name__  == '   main  ':
-app.run(port=5000)
 
 
 
