@@ -32,9 +32,9 @@ def add_new_product():
     if request.method == "POST":
        try:
            product ={"productId": request.form['productId'],
-                     "productId": request.form['productNmae'],
-                     "productId": request.form['Price'],
-                     "productId": request.form['Rating'],
+                     "productName": request.form['productName'],
+                     "Price": request.form['Price'],
+                     "Rating": request.form['Rating'],
                      }
            # passing products with db.append(product)
            db.append(product)
@@ -46,8 +46,9 @@ def add_new_product():
     else:
         return render_template("add_product.html")
 
-if __name__  == '   main  ':
-    app.run(port=4003)
+if __name__ == "__main__":
+    app.secret_key = "secret123"
+    app.run(port=4003, debug=True)
 
 
 
